@@ -24,7 +24,7 @@ public static void main(String[] args) {
 	sc.close();
 	try {
 		Class.forName("com.mysql.jdbc.Driver");
-		con=DriverManager.getConnection("jdbc:mysql://localhost:3306?user=Bhavuk&password=1729");
+		con=DriverManager.getConnection("url");
 		con.setAutoCommit(false);
 		pstmt1=con.prepareStatement(qry1);
 		pstmt1.setInt(1,id);
